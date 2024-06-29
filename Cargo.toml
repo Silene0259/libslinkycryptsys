@@ -1,0 +1,26 @@
+[package]
+name = "slinkycryptsyslib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Internals
+schnorrkel = "0.11.4"
+rand = "0.8.5"
+rand_old = { package = 'rand', version="0.7.3" }
+
+getrandom = "0.2.15"
+
+blake3 = "1.5.1"
+sha2 = "0.10.8"
+blake2-rfc = "0.2.18"
+
+rsa = "0.9.6"
+ecies-ed25519 = { version = "0.5.1", features = ["pure_rust"] }
+
+# Encoding
+hex = "0.4.3"
+base32 = "0.5.0"
+bs58 = "0.5.1"
